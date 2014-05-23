@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111FFED1192CCB9A00D719F3 /* PCWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111FFED0192CCB9A00D719F3 /* PCWalletViewController.m */; };
+		111FFED4192D022400D719F3 /* NameGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 111FFED3192D022400D719F3 /* NameGenerator.m */; };
+		111FFED8192D022F00D719F3 /* name.csv in Resources */ = {isa = PBXBuildFile; fileRef = 111FFED5192D022F00D719F3 /* name.csv */; };
+		111FFED9192D022F00D719F3 /* syllable.csv in Resources */ = {isa = PBXBuildFile; fileRef = 111FFED6192D022F00D719F3 /* syllable.csv */; };
+		111FFEDA192D022F00D719F3 /* title.csv in Resources */ = {isa = PBXBuildFile; fileRef = 111FFED7192D022F00D719F3 /* title.csv */; };
 		116788FC190AB1EF0044A433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116788FB190AB1EF0044A433 /* Foundation.framework */; };
 		116788FE190AB1EF0044A433 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116788FD190AB1EF0044A433 /* CoreGraphics.framework */; };
 		11678900190AB1EF0044A433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116788FF190AB1EF0044A433 /* UIKit.framework */; };
@@ -14,13 +19,14 @@
 		11678908190AB1EF0044A433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678907190AB1EF0044A433 /* main.m */; };
 		1167890C190AB1EF0044A433 /* PCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1167890B190AB1EF0044A433 /* PCAppDelegate.m */; };
 		1167890F190AB1EF0044A433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1167890D190AB1EF0044A433 /* Main.storyboard */; };
-		11678912190AB1EF0044A433 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678911190AB1EF0044A433 /* PCViewController.m */; };
 		11678914190AB1EF0044A433 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11678913190AB1EF0044A433 /* Images.xcassets */; };
 		1167891B190AB1EF0044A433 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1167891A190AB1EF0044A433 /* XCTest.framework */; };
 		1167891C190AB1EF0044A433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116788FB190AB1EF0044A433 /* Foundation.framework */; };
 		1167891D190AB1EF0044A433 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 116788FF190AB1EF0044A433 /* UIKit.framework */; };
 		11678925190AB1EF0044A433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11678923190AB1EF0044A433 /* InfoPlist.strings */; };
 		11678927190AB1EF0044A433 /* CreditCardProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678926190AB1EF0044A433 /* CreditCardProjectTests.m */; };
+		11678938190AB2E30044A433 /* PCCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678937190AB2E30044A433 /* PCCreditCard.m */; };
+		1167893E190AC9040044A433 /* PCCreditCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1167893D190AC9040044A433 /* PCCreditCardVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		111FFECF192CCB9A00D719F3 /* PCWalletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCWalletViewController.h; sourceTree = "<group>"; };
+		111FFED0192CCB9A00D719F3 /* PCWalletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCWalletViewController.m; sourceTree = "<group>"; };
+		111FFED2192D022400D719F3 /* NameGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameGenerator.h; sourceTree = "<group>"; };
+		111FFED3192D022400D719F3 /* NameGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameGenerator.m; sourceTree = "<group>"; };
+		111FFED5192D022F00D719F3 /* name.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.csv; sourceTree = "<group>"; };
+		111FFED6192D022F00D719F3 /* syllable.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = syllable.csv; sourceTree = "<group>"; };
+		111FFED7192D022F00D719F3 /* title.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = title.csv; sourceTree = "<group>"; };
 		116788F8190AB1EF0044A433 /* CreditCardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116788FB190AB1EF0044A433 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		116788FD190AB1EF0044A433 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,14 +58,16 @@
 		1167890A190AB1EF0044A433 /* PCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCAppDelegate.h; sourceTree = "<group>"; };
 		1167890B190AB1EF0044A433 /* PCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCAppDelegate.m; sourceTree = "<group>"; };
 		1167890E190AB1EF0044A433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		11678910190AB1EF0044A433 /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
-		11678911190AB1EF0044A433 /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
 		11678913190AB1EF0044A433 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		11678919190AB1EF0044A433 /* CreditCardProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1167891A190AB1EF0044A433 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		11678922190AB1EF0044A433 /* CreditCardProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CreditCardProjectTests-Info.plist"; sourceTree = "<group>"; };
 		11678924190AB1EF0044A433 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		11678926190AB1EF0044A433 /* CreditCardProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditCardProjectTests.m; sourceTree = "<group>"; };
+		11678936190AB2E30044A433 /* PCCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCreditCard.h; sourceTree = "<group>"; };
+		11678937190AB2E30044A433 /* PCCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCreditCard.m; sourceTree = "<group>"; };
+		1167893C190AC9040044A433 /* PCCreditCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCreditCardVC.h; sourceTree = "<group>"; };
+		1167893D190AC9040044A433 /* PCCreditCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCreditCardVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +129,15 @@
 			children = (
 				1167890A190AB1EF0044A433 /* PCAppDelegate.h */,
 				1167890B190AB1EF0044A433 /* PCAppDelegate.m */,
+				1167893C190AC9040044A433 /* PCCreditCardVC.h */,
+				1167893D190AC9040044A433 /* PCCreditCardVC.m */,
+				11678936190AB2E30044A433 /* PCCreditCard.h */,
+				11678937190AB2E30044A433 /* PCCreditCard.m */,
 				1167890D190AB1EF0044A433 /* Main.storyboard */,
-				11678910190AB1EF0044A433 /* PCViewController.h */,
-				11678911190AB1EF0044A433 /* PCViewController.m */,
+				111FFECF192CCB9A00D719F3 /* PCWalletViewController.h */,
+				111FFED0192CCB9A00D719F3 /* PCWalletViewController.m */,
+				111FFED2192D022400D719F3 /* NameGenerator.h */,
+				111FFED3192D022400D719F3 /* NameGenerator.m */,
 				11678913190AB1EF0044A433 /* Images.xcassets */,
 				11678902190AB1EF0044A433 /* Supporting Files */,
 			);
@@ -126,6 +147,9 @@
 		11678902190AB1EF0044A433 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				111FFED5192D022F00D719F3 /* name.csv */,
+				111FFED6192D022F00D719F3 /* syllable.csv */,
+				111FFED7192D022F00D719F3 /* title.csv */,
 				11678903190AB1EF0044A433 /* CreditCardProject-Info.plist */,
 				11678904190AB1EF0044A433 /* InfoPlist.strings */,
 				11678907190AB1EF0044A433 /* main.m */,
@@ -200,6 +224,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Anvar Azizov";
 				TargetAttributes = {
+					116788F7190AB1EF0044A433 = {
+						DevelopmentTeam = 63QK7MRVTT;
+					};
 					11678918190AB1EF0044A433 = {
 						TestTargetID = 116788F7190AB1EF0044A433;
 					};
@@ -229,9 +256,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111FFED9192D022F00D719F3 /* syllable.csv in Resources */,
 				11678914190AB1EF0044A433 /* Images.xcassets in Resources */,
 				11678906190AB1EF0044A433 /* InfoPlist.strings in Resources */,
 				1167890F190AB1EF0044A433 /* Main.storyboard in Resources */,
+				111FFED8192D022F00D719F3 /* name.csv in Resources */,
+				111FFEDA192D022F00D719F3 /* title.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1167893E190AC9040044A433 /* PCCreditCardVC.m in Sources */,
 				11678908190AB1EF0044A433 /* main.m in Sources */,
-				11678912190AB1EF0044A433 /* PCViewController.m in Sources */,
+				111FFED4192D022400D719F3 /* NameGenerator.m in Sources */,
+				111FFED1192CCB9A00D719F3 /* PCWalletViewController.m in Sources */,
+				11678938190AB2E30044A433 /* PCCreditCard.m in Sources */,
 				1167890C190AB1EF0044A433 /* PCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +342,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -347,7 +380,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -377,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CreditCardProject/CreditCardProject-Prefix.pch";
 				INFOPLIST_FILE = "CreditCardProject/CreditCardProject-Info.plist";
@@ -390,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CreditCardProject/CreditCardProject-Prefix.pch";
 				INFOPLIST_FILE = "CreditCardProject/CreditCardProject-Info.plist";
@@ -457,6 +492,7 @@
 				1167892C190AB1EF0044A433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1167892D190AB1EF0044A433 /* Build configuration list for PBXNativeTarget "CreditCardProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +501,7 @@
 				1167892F190AB1EF0044A433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

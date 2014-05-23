@@ -1,5 +1,5 @@
 //
-//  PCViewController.h
+//  PCCreditCardVC.h
 //  CreditCardProject
 //
 //  Created by Anvar Azizov on 2014-04-25.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PCCreditCard.h"
 
-@interface PCViewController : UIViewController
+@interface PCCreditCardVC : UIViewController
+
+@property (retain, nonatomic) PCCreditCard * creditCard;
 
 @end
