@@ -7,6 +7,7 @@
 //
 
 #import "PCCreditCardVC.h"
+#import "PCEditCardViewController.h"
 
 @interface PCCreditCardVC ()
 
@@ -27,12 +28,19 @@
     if (self) {
         // Custom initialization
     }
+	
     return self;
 }
 
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self
+											 selector:@selector(testNotifications:)
+												 name:@"creditCardDidChange"
+											   object:self.creditCard];
+	
 	[self updateUI];
 }
 
@@ -54,8 +62,8 @@
 
 - (void)updateUI
 {
-	self.cardNumberLabel.text = _creditCard.number;
-	self.cardMonthLabel.text = [NSString stringWithFormat:@"%d", self.creditCard.validTo.month];
+	self.cardNumberLabel.text = self.creditCard.number;
+	self.cardMonthLabel.text = [NSString stringWithFormat:@"%d", self.creditCard.validTo.mo];
 	self.cardYearLabel.text = [NSString stringWithFormat:@"%d", self.creditCard.validTo.year];
 	self.cardOwnerLabel.text = self.creditCard.owner;
 	self.cardCVVLabel.text = self.creditCard.securityCode;
@@ -67,6 +75,15 @@
 		self.cardTypeLabel.text = @"MasterCard";
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+	if ([segue.identifier isEqualToString:@"editCard"])
+	{
+		PCEditCardViewController * destViewController = segue.destinationViewController;
+		destViewController.creditCard = self.creditCard;
+	}
+}
+
 - (void)dealloc
 {
 	[_cardNumberLabel release];
@@ -75,6 +92,13 @@
 	[_cardOwnerLabel release];
 	[_cardCVVLabel release];
 	[_cardTypeLabel release];
+	
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	[super dealloc];
+}
+
+- (void)testNotifications:(NSNotification *)notification
+{
+	[self updateUI];
 }
 @end

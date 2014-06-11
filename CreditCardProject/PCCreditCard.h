@@ -16,8 +16,8 @@
 }
 typedef struct
 {
-	NSUInteger month;
-	NSUInteger year;
+	NSInteger mo;
+	NSInteger year;
 } PCCreditCardDate;
 
 typedef enum

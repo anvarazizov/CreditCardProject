@@ -62,8 +62,38 @@
 		[_number release];
 		_number = [cardNumber retain];
 		
+		[[NSNotificationCenter defaultCenter]
+		 postNotificationName:@"creditCardDidChange"
+		 object:self];
+		
 		[self cardType];
 	}
+}
+
+- (void)setSecurityCode:(NSString *)cvvCode
+{
+	if (_securityCode != cvvCode)
+	{
+		[_securityCode release];
+		_securityCode = [cvvCode retain];
+	}
+	
+	[[NSNotificationCenter defaultCenter]
+	 postNotificationName:@"creditCardDidChange"
+	 object:self];
+}
+
+- (void)setValidTo:(PCCreditCardDate)cardValidTo
+{
+	if (_validTo.mo != cardValidTo.mo)
+	{
+		_validTo.mo = cardValidTo.mo;
+	}
+	if (_validTo.year != cardValidTo.year)
+	{
+		_validTo.year = cardValidTo.year;
+	}
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"creditCardDidChange" object:self];
 }
 
 @end

@@ -20,8 +20,8 @@
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+    if (self)
+	{
     }
     return self;
 }
@@ -31,7 +31,7 @@
 	[super viewDidLoad];
     
 	PCCreditCardDate validDate;
-	validDate.month = RAND_FROM_TO(1, 12);
+	validDate.mo = RAND_FROM_TO(1, 12);
 	validDate.year = RAND_FROM_TO(10, 25);
 	
 	PCCreditCard * initialCard = [PCCreditCard creditCardWithNumber:[self generateCardNumber] validTo:validDate owner:@"me" cardCVV:[self generateCVV]];
@@ -40,6 +40,11 @@
 	self.cards = initialCards;
 
 	[initialCards release];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,7 +101,7 @@
 - (PCCreditCard *)generateRandomCard
 {
 	PCCreditCardDate validDate;
-	validDate.month = RAND_FROM_TO(1, 12);
+	validDate.mo = RAND_FROM_TO(1, 12);
 	validDate.year = RAND_FROM_TO(10, 25);
 	
 	NameGenerator * nameGenerator = [[NameGenerator alloc] init];
@@ -145,6 +150,7 @@
 - (void)dealloc
 {
 	[_cards release];
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	[super dealloc];
 }
 

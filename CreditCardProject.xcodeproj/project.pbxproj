@@ -27,6 +27,7 @@
 		11678927190AB1EF0044A433 /* CreditCardProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678926190AB1EF0044A433 /* CreditCardProjectTests.m */; };
 		11678938190AB2E30044A433 /* PCCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11678937190AB2E30044A433 /* PCCreditCard.m */; };
 		1167893E190AC9040044A433 /* PCCreditCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1167893D190AC9040044A433 /* PCCreditCardVC.m */; };
+		11D84874193F40D7003A14D8 /* PCEditCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D84873193F40D7003A14D8 /* PCEditCardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		11678937190AB2E30044A433 /* PCCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCreditCard.m; sourceTree = "<group>"; };
 		1167893C190AC9040044A433 /* PCCreditCardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCCreditCardVC.h; sourceTree = "<group>"; };
 		1167893D190AC9040044A433 /* PCCreditCardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCCreditCardVC.m; sourceTree = "<group>"; };
+		11D84872193F40D7003A14D8 /* PCEditCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCEditCardViewController.h; sourceTree = "<group>"; };
+		11D84873193F40D7003A14D8 /* PCEditCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCEditCardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +132,15 @@
 			children = (
 				1167890A190AB1EF0044A433 /* PCAppDelegate.h */,
 				1167890B190AB1EF0044A433 /* PCAppDelegate.m */,
-				1167893C190AC9040044A433 /* PCCreditCardVC.h */,
-				1167893D190AC9040044A433 /* PCCreditCardVC.m */,
 				11678936190AB2E30044A433 /* PCCreditCard.h */,
 				11678937190AB2E30044A433 /* PCCreditCard.m */,
 				1167890D190AB1EF0044A433 /* Main.storyboard */,
 				111FFECF192CCB9A00D719F3 /* PCWalletViewController.h */,
 				111FFED0192CCB9A00D719F3 /* PCWalletViewController.m */,
+				1167893C190AC9040044A433 /* PCCreditCardVC.h */,
+				1167893D190AC9040044A433 /* PCCreditCardVC.m */,
+				11D84872193F40D7003A14D8 /* PCEditCardViewController.h */,
+				11D84873193F40D7003A14D8 /* PCEditCardViewController.m */,
 				111FFED2192D022400D719F3 /* NameGenerator.h */,
 				111FFED3192D022400D719F3 /* NameGenerator.m */,
 				11678913190AB1EF0044A433 /* Images.xcassets */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D84874193F40D7003A14D8 /* PCEditCardViewController.m in Sources */,
 				1167893E190AC9040044A433 /* PCCreditCardVC.m in Sources */,
 				11678908190AB1EF0044A433 /* main.m in Sources */,
 				111FFED4192D022400D719F3 /* NameGenerator.m in Sources */,
